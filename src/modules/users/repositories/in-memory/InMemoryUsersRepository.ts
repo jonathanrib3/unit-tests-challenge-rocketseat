@@ -20,4 +20,8 @@ export class InMemoryUsersRepository implements IUsersRepository {
     this.users.push(user);
     return user;
   }
+
+  async getUsers() {
+    return this.users;
+  }
 }
